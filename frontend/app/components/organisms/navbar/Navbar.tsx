@@ -8,7 +8,7 @@ export const Navbar = () => {
     <div>
       <div className="flex content-center border-gray-200 border-solid border-b p-2  justify-between">
         <p className="text-black text-lg font-bold flex items-center">
-          Conway's Game of Life
+          César Vega - React concepts
         </p>
         <div className="flex gap-x-4">
           {isAuthenticated ? <LogOutButton /> : <LogInButton />}

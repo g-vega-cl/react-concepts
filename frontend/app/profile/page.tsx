@@ -1,10 +1,9 @@
-import Navbar from "../components/organisms/navbar/Navbar";
+import { Navbar } from "@/app/components/organisms/navbar/Navbar";
 
 const page = () => {
   return (
     <div>
-      <Navbar />
-      <h1>Profile</h1>
+      <h1 >Profile</h1>
     </div>
   );
 };
