@@ -1,0 +1,16 @@
+name: Eslint
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install modules
+      run: npm install
+      working-directory: frontend  # Set the working directory to 'my-folder'
+
+    - name: Run ESLint
+      run: npm run lint
+      working-directory: frontend  # Set the working directory to 'my-folder'
