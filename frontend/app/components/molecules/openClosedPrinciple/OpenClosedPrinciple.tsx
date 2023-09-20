@@ -55,7 +55,7 @@ class CarFilter {
           </SyntaxHighlighter>
           <Text className="mt-1 font-bold">
             This class violates the OCP because if we want to filter by any
-            other new property we have to change CarFilter's code
+            other new property we have to change CarFilter&apos;s code
           </Text>
           <Text className="mt-1">
             Using OCP we can refactor the class to have a filterByProp function.
@@ -75,8 +75,8 @@ class CarFilter {
           </SyntaxHighlighter>
           <Text className="mt-1">
             Keep in mind that modifying a class will affect everywhere that
-            class is used. Another example of OCP is to extend a class to
-            phase out a deprecated method.
+            class is used. Another example of OCP is to extend a class to phase
+            out a deprecated method.
           </Text>
           <SyntaxHighlighter
             language="typescript"

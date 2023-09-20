@@ -1,10 +1,18 @@
 {
-  // Added next/babel because 
-  // postcss.config.js returns an error 
-  // "Cannot find module 'next/babel'"
-  // https://stackoverflow.com/questions/68163385/parsing-error-cannot-find-module-next-babel
-
-  // Also, next JS includes the babel preset in the app.
-  // https://nextjs.org/docs/pages/building-your-application/configuring/babel
-  "extends": ["next/babel", "next/core-web-vitals"]
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "extends": "next",
+  "rules": {
+    "no-console": "warn",
+    "no-empty": "warn",
+    "no-cond-assign": ["error", "always"],
+    "eqeqeq": ["error", "always"],
+    "no-eval": "error",
+    "no-multi-spaces": "error",
+    "no-delete-var": "error",
+    "no-unused-vars": "warn",
+    "prefer-const": "warn"
+  }
 }

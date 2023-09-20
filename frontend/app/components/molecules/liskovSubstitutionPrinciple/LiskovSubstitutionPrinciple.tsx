@@ -28,7 +28,7 @@ export const LiskovSubstitutionPrinciple = () => {
             with a method called <span className="italic">SHIFT()</span>. And
             then have have a subclass called{" "}
             <span className="italic">ELECTRIC CAR</span> because ELECTRIC CARS
-            don't SHIFT. So you have an inherited method that should not exist.
+            don&apos;t SHIFT. So you have an inherited method that should not exist.
           </Text>
           <SyntaxHighlighter
             language="typescript"
