@@ -1,6 +1,5 @@
 "use client";
-import { Flex, Link } from "@chakra-ui/react";
-import NextLink from "next/link";
+import { Flex } from "@chakra-ui/react";
 
 import { ButtonSize, PinkButton } from "@/app/components/atoms";
 export default function Home() {

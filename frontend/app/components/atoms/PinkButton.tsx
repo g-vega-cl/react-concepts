@@ -33,7 +33,6 @@ export const PinkButton: React.FC<IPinkButton> = ({ className, children, buttonS
       className={classNames("text-sm font-bold bg-pink-500 text-white hover:bg-pink-400 p-2", buttonSizeClass, className)}
       as={href ? NextLink : undefined}
       href={href}
-
     >
       {children}
     </Button>
