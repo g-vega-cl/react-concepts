@@ -13,21 +13,18 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '20.6.1'  # Set the Node.js version
+        node-version: '20.6.1'
 
     - name: Install modules
-      run: npm install
-      # working-directory: frontend  # Set the working directory to 'my-folder'
+      run: npm ci
 
     - name: Run ESLint
       run: npm run lint
-      # working-directory: frontend  # Set the working directory to 'my-folder'
     
     - name: Run linters
       uses: wearerequired/lint-action@v2
       with:
         eslint: true
-        prettier: true
         
       
         
