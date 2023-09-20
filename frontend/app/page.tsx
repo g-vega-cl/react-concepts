@@ -1,5 +1,5 @@
 "use client";
-import { Box, Flex, Link } from "@chakra-ui/react";
+import { Flex, Link } from "@chakra-ui/react";
 import NextLink from "next/link";
 
 import { ButtonSize, PinkButton } from "@/app/components/atoms";

@@ -1,10 +1,10 @@
 "use client";
 import { Box, Heading, Text } from "@chakra-ui/react";
-import { SingleResponsibilityPrinciple } from "../components/molecules/singleResponsibilityPrinciple/SingleResponsibilityPrinciple";
+import { SingleResponsibilityPrinciple } from "@/app/components/molecules/singleResponsibilityPrinciple/SingleResponsibilityPrinciple";
 import { OpenClosedPrinciple } from "@/app/components/molecules/openClosedPrinciple/OpenClosedPrinciple";
 import { LiskovSubstitutionPrinciple } from "@/app/components/molecules/liskovSubstitutionPrinciple/LiskovSubstitutionPrinciple";
 import { InterfaceSegregationPrinciple } from "@/app/components/molecules/interfaceSegregationPrinciple/InterfaceSegregationPrinciple";
-import { DependencyInversionPrinciple } from "../components/molecules/dependencyInversionPrinciple/DependencyInversionPrinciple";
+import { DependencyInversionPrinciple } from "@/app/components/molecules/dependencyInversionPrinciple/DependencyInversionPrinciple";
 
 const page = () => {
   return (
