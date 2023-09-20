@@ -19,3 +19,9 @@ jobs:
     - name: Run ESLint
       run: npm run lint
       working-directory: frontend  # Set the working directory to 'my-folder'
+    
+    - name: Run linters
+      uses: wearerequired/lint-action@v2
+      with:
+        eslint: true
+        prettier: true
