@@ -1,7 +1,6 @@
 "use client";
 import { Flex } from "@chakra-ui/react";
 import { ButtonSize, PinkButton } from "@/app/components/atoms";
-import { Navbar } from "./components/organisms/navbar";
 
 export default function Home() {
   return (
