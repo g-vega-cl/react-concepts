@@ -11,10 +11,14 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: '20.6.1'  # Set the Node.js version
+      
+    - name: Install Node.js dependencies
+      run: npm ci
+      working-directory: frontend
 
-    - name: Install modules
-      run: npm install
-      working-directory: frontend  # Set the working directory to 'my-folder'
+    # - name: Install modules
+    #   run: npm install
+    #   working-directory: frontend  # Set the working directory to 'my-folder'
 
     - name: Run ESLint
       run: npm run lint
