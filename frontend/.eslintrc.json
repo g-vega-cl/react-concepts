@@ -1,8 +1,7 @@
 {
   "parser": "@babel/eslint-parser",
   "parserOptions": {
-    "sourceType": "module",
-    "ecmaVersion": 2020
+    "sourceType": "module"
   },
   "extends": "next",
   "rules": {
