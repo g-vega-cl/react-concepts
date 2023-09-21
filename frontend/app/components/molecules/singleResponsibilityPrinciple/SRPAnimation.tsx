@@ -6,8 +6,7 @@ import { ArrowDownIcon } from "@chakra-ui/icons";
 const buttonClass =
   "bg-pink-300 h-12 flex justify-center items-center rounded";
 const textClass = "text-white font-bold";
-{/* TODO, Add modal with code when you click the buttons */}
-export const SRPAnimation: React.FC = () => {
+export const SRPAnimation = () => {
   return (
     <Box className="grid my-8" style={{ gridTemplateRows: "1fr" }}>
       <Box className="mb-4">

@@ -13,6 +13,9 @@
     "no-multi-spaces": "error",
     "no-delete-var": "error",
     "no-unused-vars": "warn",
-    "prefer-const": "warn"
+    "prefer-const": "warn",
+    "react/function-component-definition": [2, {
+      "namedComponents": "arrow-function"
+    }]
   }
 }

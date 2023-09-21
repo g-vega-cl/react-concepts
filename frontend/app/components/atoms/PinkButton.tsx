@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useMemo } from "react";
 import { Button, ButtonProps } from "@chakra-ui/react";
 import classNames from "classnames";
 import NextLink from "next/link";
@@ -6,7 +6,7 @@ import NextLink from "next/link";
 export enum ButtonSize {
   SM = "sm",
   MD = "md",
-  LG = "lg", 
+  LG = "lg",
 }
 
 export interface IPinkButton extends ButtonProps {
@@ -14,7 +14,13 @@ export interface IPinkButton extends ButtonProps {
   href?: string;
 }
 
-export const PinkButton: React.FC<IPinkButton> = ({ className, children, buttonSize, href, ...props }) => {
+export const PinkButton = ({
+  className,
+  children,
+  buttonSize = ButtonSize.SM,
+  href,
+  ...props
+}: IPinkButton) => {
   const buttonSizeClass = useMemo(() => {
     switch (buttonSize) {
       case "sm":
@@ -30,7 +36,11 @@ export const PinkButton: React.FC<IPinkButton> = ({ className, children, buttonS
   return (
     <Button
       {...props}
-      className={classNames("text-sm font-bold bg-pink-500 text-white hover:bg-pink-400 p-2", buttonSizeClass, className)}
+      className={classNames(
+        "text-sm font-bold bg-pink-500 text-white hover:bg-pink-400 p-2",
+        buttonSizeClass,
+        className
+      )}
       as={href ? NextLink : undefined}
       href={href}
     >
