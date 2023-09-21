@@ -14,7 +14,13 @@ export interface IPinkButton extends ButtonProps {
   href?: string;
 }
 
-export const PinkButton: React.FC<IPinkButton> = ({ className, children, buttonSize, href, ...props }) => {
+export const PinkButton = ({
+  className,
+  children,
+  buttonSize = ButtonSize.SM,
+  href,
+  ...props
+}: IPinkButton)  => {
   const buttonSizeClass = useMemo(() => {
     switch (buttonSize) {
       case "sm":

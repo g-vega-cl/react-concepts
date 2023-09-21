@@ -1,14 +1,15 @@
 "use client";
-import { Box, Heading, Text } from "@chakra-ui/react";
+import { Heading, Text } from "@chakra-ui/react";
 import { SingleResponsibilityPrinciple } from "@/app/components/molecules/singleResponsibilityPrinciple/SingleResponsibilityPrinciple";
 import { OpenClosedPrinciple } from "@/app/components/molecules/openClosedPrinciple/OpenClosedPrinciple";
 import { LiskovSubstitutionPrinciple } from "@/app/components/molecules/liskovSubstitutionPrinciple/LiskovSubstitutionPrinciple";
 import { InterfaceSegregationPrinciple } from "@/app/components/molecules/interfaceSegregationPrinciple/InterfaceSegregationPrinciple";
 import { DependencyInversionPrinciple } from "@/app/components/molecules/dependencyInversionPrinciple/DependencyInversionPrinciple";
+import { ParallaxMotionBox } from "../components/atoms/MotionBox";
 
 const page = () => {
   return (
-    <Box>
+    <ParallaxMotionBox>
       <Heading as="h1">SOLID</Heading>
       <Text className="mt-1">
         SOLID principles are a set of software design principles that guide
@@ -26,7 +27,7 @@ const page = () => {
       <LiskovSubstitutionPrinciple />
       <InterfaceSegregationPrinciple />
       <DependencyInversionPrinciple />
-    </Box>
+    </ParallaxMotionBox>
   );
 };
 
