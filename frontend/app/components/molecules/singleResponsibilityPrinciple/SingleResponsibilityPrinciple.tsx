@@ -129,7 +129,6 @@ class MaintenanceManager {
 }
 `}
           </SyntaxHighlighter>
-          {/* TODO, Add modal with code when you click the buttons */}
           <SRPAnimation />
         </Box>
       )}

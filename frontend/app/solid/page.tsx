@@ -7,7 +7,7 @@ import { InterfaceSegregationPrinciple } from "@/app/components/molecules/interf
 import { DependencyInversionPrinciple } from "@/app/components/molecules/dependencyInversionPrinciple/DependencyInversionPrinciple";
 import { ParallaxMotionBox } from "../components/atoms/MotionBox";
 
-const page = () => {
+const Page = () => {
   return (
     <ParallaxMotionBox>
       <Heading as="h1">SOLID</Heading>
@@ -31,4 +31,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

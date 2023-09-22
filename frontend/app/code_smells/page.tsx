@@ -2,7 +2,7 @@
 import { Heading, Text } from "@chakra-ui/react";
 import { ParallaxMotionBox } from "../components/atoms/MotionBox";
 
-const page = () => {
+const Page = () => {
   return (
     <ParallaxMotionBox>
       <Heading as="h1">Code Smells</Heading>
@@ -15,4 +15,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
