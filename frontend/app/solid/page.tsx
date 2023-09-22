@@ -5,7 +5,7 @@ import { OpenClosedPrinciple } from "@/app/components/molecules/openClosedPrinci
 import { LiskovSubstitutionPrinciple } from "@/app/components/molecules/liskovSubstitutionPrinciple/LiskovSubstitutionPrinciple";
 import { InterfaceSegregationPrinciple } from "@/app/components/molecules/interfaceSegregationPrinciple/InterfaceSegregationPrinciple";
 import { DependencyInversionPrinciple } from "@/app/components/molecules/dependencyInversionPrinciple/DependencyInversionPrinciple";
-import { ParallaxMotionBox } from "../components/atoms/MotionBox";
+import { ParallaxMotionBox } from "@/app/components/atoms/MotionBox";
 
 const Page = () => {
   return (
