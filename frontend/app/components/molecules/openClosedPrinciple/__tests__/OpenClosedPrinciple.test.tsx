@@ -4,20 +4,20 @@ import { OpenClosedPrinciple } from '../OpenClosedPrinciple';
 
 describe('<InterfaceSegregationPrinciple />', () => {
   it('should toggle the isOpen state when PinkButton is clicked', () => {
-    // 1. Render the component
+    
     render(<OpenClosedPrinciple />);
 
-    // 2. Find the PinkButton element by its content
-    const pinkButton = screen.getByText('Hide'); // Initially, it should show "Hide" since isOpen is true
+    
+    const pinkButton = screen.getByText('Hide');
 
-    // 3. Simulate a click event on the button
+    
     fireEvent.click(pinkButton);
 
-    // 4. Check if the content of the PinkButton has been updated
-    expect(screen.getByText('Show')).toBeInTheDocument(); // After one click, it should show "Show" since isOpen becomes false
+    
+    expect(screen.getByText('Show')).toBeInTheDocument();
 
-    // Simulate another click to toggle it back
+    
     fireEvent.click(screen.getByText('Show'));
-    expect(screen.getByText('Hide')).toBeInTheDocument(); // It should show "Hide" again
+    expect(screen.getByText('Hide')).toBeInTheDocument();
   });
 });
