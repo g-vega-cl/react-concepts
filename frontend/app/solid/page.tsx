@@ -5,9 +5,9 @@ import { OpenClosedPrinciple } from "@/app/components/molecules/openClosedPrinci
 import { LiskovSubstitutionPrinciple } from "@/app/components/molecules/liskovSubstitutionPrinciple/LiskovSubstitutionPrinciple";
 import { InterfaceSegregationPrinciple } from "@/app/components/molecules/interfaceSegregationPrinciple/InterfaceSegregationPrinciple";
 import { DependencyInversionPrinciple } from "@/app/components/molecules/dependencyInversionPrinciple/DependencyInversionPrinciple";
-import { ParallaxMotionBox } from "../components/atoms/MotionBox";
+import { ParallaxMotionBox } from "@/app/components/atoms/MotionBox";
 
-const page = () => {
+const Page = () => {
   return (
     <ParallaxMotionBox>
       <Heading as="h1">SOLID</Heading>
@@ -31,4 +31,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

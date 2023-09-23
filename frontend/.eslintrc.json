@@ -3,7 +3,7 @@
   "parserOptions": {
     "sourceType": "module"
   },
-  "extends": "next",
+  "extends": ["next"],
   "rules": {
     "no-console": "warn",
     "no-empty": "warn",
