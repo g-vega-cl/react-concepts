@@ -3,15 +3,15 @@ import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { docco } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 import { useState } from "react";
-import { PinkButton } from "../../atoms";
+import { PinkButton } from "../../../components/atoms";
 
-export const LiskovSubstitutionPrinciple = () => {
+export const InterfaceSegregationPrinciple = () => {
   const [isOpen, setIsOpen] = useState(true);
   return (
     <Box>
       <Flex className="gap-4 align-center mt-3  justify-between">
         <Heading as="h2" size="lg">
-          Liskov Substitution Principle.
+          Interface Segregation Principle.
         </Heading>
         <PinkButton onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? "Hide" : "Show"}
@@ -20,15 +20,16 @@ export const LiskovSubstitutionPrinciple = () => {
       {isOpen && (
         <Box>
           <Text as="cite" className="mt-1">
-            You should be able to change an instance using a sub-type and your
-            code should still work.
+            Allows to split the responsibility of a class without LSP violation.
           </Text>
           <Text className="mt-1">
-            You should not have a <span className="italic">VEHICLE</span> class
-            with a method called <span className="italic">SHIFT()</span>. And
-            then have have a subclass called{" "}
-            <span className="italic">ELECTRIC CAR</span> because ELECTRIC CARS
-            don&apos;t SHIFT. So you have an inherited method that should not exist.
+            More interfaces are better than too little.
+          </Text>
+
+          <Text className="mt-1">
+            There are no interfaces in JavaScript. So we will use typescript to
+            exemplify. Taking the example from above we can split the Car class
+            into two
           </Text>
           <SyntaxHighlighter
             language="typescript"
@@ -36,32 +37,24 @@ export const LiskovSubstitutionPrinciple = () => {
             showLineNumbers
           >
             {`
-class Car {
-	constructor(brand, model){
-    this.brand = brand;
-    this.model = model;
-	}
-
+interface Car {
+    brand: string;
+    model: string;
 }
 
-class CombustonCar extends Car {
-    shift(){
-        console.log("Shifting gears");
-    }
+interface ElectricCar extends Car {
+    charge: () => void;
+    battery: number;
 }
 
-class ElectricCar extends Car {
-  constructor(charge){
-    this.charge = charge;
-  }
-  charge(){
-    console.log("Charging");
-  }
+interface CombustionCar extends Car {
+    shift: () => void;
+    fuel: number;
 }
 `}
           </SyntaxHighlighter>
           <Text className="mt-1">
-            Your higher classes should encompass only the minimum common
+            Your higher interface should encompass only the minimum common
             denominators.
           </Text>
         </Box>

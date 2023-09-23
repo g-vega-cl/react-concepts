@@ -2,7 +2,7 @@
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { useState } from "react";
-import { PinkButton } from "../../atoms";
+import { PinkButton } from "../../../components/atoms";
 import { docco } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 
 export const DependencyInversionPrinciple = () => {

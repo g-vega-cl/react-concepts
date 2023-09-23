@@ -3,7 +3,7 @@ import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { docco } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 import { useState } from "react";
-import { PinkButton } from "../../atoms";
+import { PinkButton } from "../../../components/atoms";
 
 export const OpenClosedPrinciple = () => {
   const [isOpen, setIsOpen] = useState(true);
