@@ -3,7 +3,7 @@ import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { docco } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 import { useState } from "react";
-import { PinkButton } from "../../../components/atoms";
+import { ToggleOpenPinkButton } from "@/app/components/molecules";
 
 export const LiskovSubstitutionPrinciple = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -13,9 +13,7 @@ export const LiskovSubstitutionPrinciple = () => {
         <Heading as="h2" size="lg">
           Liskov Substitution Principle.
         </Heading>
-        <PinkButton onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? "Hide" : "Show"}
-        </PinkButton>
+        <ToggleOpenPinkButton isOpen={isOpen} setIsOpen={setIsOpen}/>
       </Flex>
       {isOpen && (
         <Box>

@@ -2,8 +2,8 @@
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { useState } from "react";
-import { PinkButton } from "../../../components/atoms";
 import { docco } from "react-syntax-highlighter/dist/cjs/styles/hljs";
+import { ToggleOpenPinkButton } from "@/app/components/molecules";
 
 export const DependencyInversionPrinciple = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -13,9 +13,7 @@ export const DependencyInversionPrinciple = () => {
         <Heading as="h2" size="lg">
           Dependency Inversion Principle
         </Heading>
-        <PinkButton onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? "Hide" : "Show"}
-        </PinkButton>
+        <ToggleOpenPinkButton isOpen={isOpen} setIsOpen={setIsOpen}/>
       </Flex>
       {isOpen && (
         <Box>

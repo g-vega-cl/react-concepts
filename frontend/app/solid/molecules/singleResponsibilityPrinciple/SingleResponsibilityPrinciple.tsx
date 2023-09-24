@@ -4,7 +4,7 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import { docco } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 import { SRPAnimation } from "@/app/solid/molecules/singleResponsibilityPrinciple/SRPAnimation";
 import { useState } from "react";
-import { PinkButton } from "../../../components/atoms";
+import { ToggleOpenPinkButton } from "@/app/components/molecules";
 
 export const SingleResponsibilityPrinciple = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -14,9 +14,7 @@ export const SingleResponsibilityPrinciple = () => {
         <Heading as="h2" size="lg">
           Single Responsibility Principle.
         </Heading>
-        <PinkButton onClick={() => setIsOpen(!isOpen)} >
-          {isOpen ? "Hide" : "Show"}
-        </PinkButton>
+        <ToggleOpenPinkButton isOpen={isOpen} setIsOpen={setIsOpen}/>
       </Flex>
       {isOpen && (
         <Box>
