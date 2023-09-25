@@ -1,11 +1,11 @@
 "use client";
 import { Heading, Text } from "@chakra-ui/react";
-import { SingleResponsibilityPrinciple } from "@/app/solid/molecules/singleResponsibilityPrinciple/SingleResponsibilityPrinciple";
-import { OpenClosedPrinciple } from "@/app/solid/molecules/openClosedPrinciple/OpenClosedPrinciple";
-import { LiskovSubstitutionPrinciple } from "@/app/solid/molecules/liskovSubstitutionPrinciple/LiskovSubstitutionPrinciple";
-import { InterfaceSegregationPrinciple } from "@/app/solid/molecules/interfaceSegregationPrinciple/InterfaceSegregationPrinciple";
-import { DependencyInversionPrinciple } from "@/app/solid/molecules/dependencyInversionPrinciple/DependencyInversionPrinciple";
-import { ParallaxMotionBox } from "@/app/components/atoms/MotionBox";
+import { SingleResponsibilityPrinciple } from "@/app/solid/molecules/";
+import { OpenClosedPrinciple } from "@/app/solid/molecules/";
+import { LiskovSubstitutionPrinciple } from "@/app/solid/molecules/";
+import { InterfaceSegregationPrinciple } from "@/app/solid/molecules/";
+import { DependencyInversionPrinciple } from "@/app/solid/molecules/";
+import { ParallaxMotionBox } from "@/app/components/atoms";
 
 const Page = () => {
   return (

@@ -1,6 +1,6 @@
 "use client";
 import { Heading, Text } from "@chakra-ui/react";
-import { ParallaxMotionBox } from "@/app/components/atoms/MotionBox";
+import { ParallaxMotionBox } from "@/app/components/atoms/ParallaxMotionBox";
 import { Coupling } from "@/app/code_smells/molecules";
 
 const Page = () => {
