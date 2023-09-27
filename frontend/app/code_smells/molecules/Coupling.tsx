@@ -1,7 +1,6 @@
 import { TextLink } from "@/app/components/atoms";
 import { ToggleOpenPinkButton } from "@/app/components/molecules";
 import { Box, Flex, Heading, Text } from "@chakra-ui/react"
-import Link from "next/link";
 import { useState } from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { docco } from "react-syntax-highlighter/dist/cjs/styles/hljs";
@@ -33,7 +32,7 @@ export const Coupling = () => {
                     <Text className="mt-1 mb-2">
                         One example of coupling is when a file has more than one responsibility.
                         (Remember the <TextLink href="/solid" className="italic"> Single Responsability Principle?</TextLink>)
-                        In this case a file takes a prop and checks if it's a header of a footer,
+                        In this case a file takes a prop and checks if it&apos;s a header of a footer,
                         this should be avoided.
                     </Text>
                     <SyntaxHighlighter
@@ -48,11 +47,11 @@ const HeaderOrFooter = ({ isHeader }) => {
     } 
     return (<div className="footer">...</div>)   
 }`
-}
+                        }
                     </SyntaxHighlighter>
                     <Text className="mt-1 mb-2">
                         In this case we want to make a Header component and a Footer component and manage
-                        the display in it's parent component
+                        the display in &apos; parent component
                     </Text>
                     <SyntaxHighlighter
                         language="typescript"
@@ -72,14 +71,14 @@ const Footer = () => {
     return (<div className="footer">...</div>)   
 }
 `
-}
+                        }
                     </SyntaxHighlighter>
                     <Heading as="h3" size="md" className="mt-3">
                         Avoid prop drilling
                     </Heading>
                     <Text className="mt-1 mb-2">
                         Prop drilling is the process where you pass props from a parent component to a child component,
-                        If your parent component and your child component share too much state, that's a sign of tight coupling and should be avoided.
+                        If your parent component and your child component share too much state, that&apos;s a sign of tight coupling and should be avoided.
                     </Text>
                     <SyntaxHighlighter
                         language="typescript"
@@ -100,13 +99,13 @@ const ChildComponent = ({prop1, prop2, prop3}: IChildComponent) => {
     <GrandChildComponent prop1={prop1} .... prop3={prop3}/>
 }
 `
-}
+                        }
                     </SyntaxHighlighter>
                     <Text className="mt-1 mb-2">
                         In this scenario we want to separate the parent from the child and the grandchild,
                         we can do that by either creating a shared context or create components with better separation of concerns.
                         <br />
-                        Remember to always be careful because we don't want to over-use context state.
+                        Remember to always be careful because we don&apos;t want to over-use context state.
                     </Text>
 
                     <SyntaxHighlighter
@@ -134,10 +133,10 @@ const GrandChildComponent = () => {
 }
 
 `
-}
+                        }
                     </SyntaxHighlighter>
                     <Heading as="h3" size="md" className="mt-3">
-                        Fetch data close to where it's used
+                        Fetch data close to where &apos; used
                     </Heading>
                     <Text className="mt-1 mb-2">
                         This is a personal preference, but I believe that data should be
@@ -158,7 +157,7 @@ const ParentComponent = () => {
     <ChildComponent data={data}/>
 }
 `
-}
+                        }
                     </SyntaxHighlighter>
                     <Text className="mt-1 mb-2">
                         Instead we should fetch the data directly in our child component.
