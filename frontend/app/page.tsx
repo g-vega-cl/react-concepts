@@ -2,6 +2,10 @@
 import { Flex } from "@chakra-ui/react";
 import { ButtonSize, PinkButton } from "@/app/components/atoms";
 
+const functionExample = () => {
+  return "a"
+}
+
 const Home = () => {
   return (
     <main>
