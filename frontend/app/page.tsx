@@ -3,8 +3,8 @@ import { Flex } from "@chakra-ui/react";
 import { ButtonSize, PinkButton } from "@/app/components/atoms";
 
 const functionExample = () => {
-  return "a"
-    .split("")
+  return "a-b-c-d"
+    .split("-")
 }
 
 const Home = () => {
