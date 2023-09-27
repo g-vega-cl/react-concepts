@@ -178,9 +178,7 @@ const ChildComponent = () => {
     data = useGetData();
     ....
 }
-
-`
-}
+`}
                     </SyntaxHighlighter>
 
                 </Box>
