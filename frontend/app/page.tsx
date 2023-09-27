@@ -4,6 +4,7 @@ import { ButtonSize, PinkButton } from "@/app/components/atoms";
 
 const functionExample = () => {
   return "a"
+    .split("")
 }
 
 const Home = () => {
